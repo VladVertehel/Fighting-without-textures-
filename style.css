@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+canvas {
+    border: 5px solid black;
+}
+
+.bars {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.p-hp,
+.e-hp {
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.p-hp {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.p-hp-bar,
+.e-hp-bar {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    z-index: 0;
+}
+
+.p-hp-bar {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.e-hp-bar {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.e-hp-hpbar {
+    background-color: red;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    bottom: 7px;
+    right: 7px;
+    width: 100%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    z-index: 1;
+}
+
+.p-hp-hpbar {
+    background-color: red;
+    position: absolute;
+    top: 7px;
+    bottom: 7px;
+    right: 7px;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    z-index: 1;
+}
+
+.timer {
+    background-color: gray;
+    height: 75px;
+    width: 75px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.result {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    background-color: aquamarine;
+}
